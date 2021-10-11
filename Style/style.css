@@ -84,6 +84,7 @@
 .text{
     position: relative;
     z-index: 10;
+    backface-visibility: hidden;
 }
 .text h2{
     font-size: 5em;
@@ -91,6 +92,9 @@
     line-height: 1em;
     text-transform: uppercase;
     color: red;
+    animation: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
 }
 .text h3{
     font-size: 4em;
@@ -98,6 +102,8 @@
     line-height: 1em;
     text-transform: uppercase;
     color: red;
+    animation: moveInRight 1s ease-out;
+     
 }
 .text p{
     font-size: 1.1em;
@@ -105,6 +111,8 @@
     font-weight: 400;
     max-width: 700px;
     color: aqua;
+    animation: moveInBottom 1s ease-out;
+     
 }
  .text a{
      display: inline-block;
@@ -177,3 +185,48 @@
          font-size: 2em;
      }
  }
+ @keyframes moveInLeft{
+     0%{
+         opacity: 0;
+         transform: translateX(100px);
+
+     }
+     80%{
+         transform: translateX(-10px);
+
+     }
+     100%{
+       opacity: 1;
+       transform: translate(0);
+     }
+ }
+ @keyframes moveInRight{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+
+    }
+    80%{
+        transform: translateX(10px);
+
+    }
+    100%{
+      opacity: 1;
+      transform: translate(0);
+    }
+}
+@keyframes moveInBottom{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+
+    }
+    80%{
+        transform: translateY(-10px);
+
+    }
+    100%{
+      opacity: 1;
+      transform: translate(0);
+    }
+}
