@@ -42,6 +42,9 @@
 .logo{
     text-transform: uppercase;
     cursor: pointer;
+    animation: moveInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
 }
 
 .toggle{
