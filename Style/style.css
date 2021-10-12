@@ -94,7 +94,7 @@
     font-weight: 800;
     line-height: 1em;
     text-transform: uppercase;
-    color: red;
+    color: brown;
     animation: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out;
@@ -104,7 +104,7 @@
     font-weight: 700;
     line-height: 1em;
     text-transform: uppercase;
-    color: red;
+    color: brown;
     animation: moveInRight 1s ease-out;
      
 }
@@ -113,7 +113,8 @@
     margin: 20px 0;
     font-weight: 400;
     max-width: 700px;
-    color: aqua;
+    color: white;
+    text-shadow: 2px 2px black;
     animation: moveInBottom 1s ease-out;
      
 }
