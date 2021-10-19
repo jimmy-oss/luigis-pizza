@@ -1,23 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
 
-button-btn{
-    margin: 2em;
-    margin-top: -8em;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins',sans-serif;
 }
+
+
   .button {
-      position: relative;
-    border-radius: 5em;
-    border: none;
-    mix-blend-mode: color-dodge;
-  color: #FFFFFF;
+   position: relative;
+  border-radius: 5em;
+  border: none;
+  mix-blend-mode: color-dodge;
+  color: #FFF;
   text-align: center;
   font-size: 20px;
+  right: 2em;
+  width: 40%;
   padding: 10px;
-  width: 100px;
   transition: all 0.5s;
   cursor: pointer;
-  margin: 5px;
+   margin-top: -22em;
+  justify-content: space-between;
   float: right;
+  left: 53em;
+  
   }
   
   .button span {
@@ -48,20 +56,45 @@ button-btn{
 
 .heading {
     position: absolute;
-    text-align: center;
-     color: #111;
+    background-color:  #111;
+    color: #FFFF;
+    z-index: 3;
      font-size: 20px;
      font-weight: 300;
-     margin-top: 5em;
+     right: 0;
+     width: 100%;
+     padding: 100px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+     margin-top: -0em;
      font-family: "Poppins",sans-serif;
-     background-image: url("../images/emergency.png");
-     min-width: 1000px;
-     min-height: 1000px;
-     
-     /* Center and scale the image nicely */
-     background-position: cover;
-     background-repeat: no-repeat;
-     background-size: cover;
       
   }
+   
+  .heading h2{
+    position: absolute;
+    top: -9em;
+    left: -7em;
+    width: 100%;
+    padding: 40px;
+  } 
   
+  .heading video{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+  }
+  .text{
+    position: relative;
+    z-index: 4;
+    font-weight: 300;
+    top: 1em ;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+  }
