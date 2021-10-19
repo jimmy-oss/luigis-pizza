@@ -25,6 +25,7 @@
   justify-content: space-between;
   float: right;
   left: 53em;
+  animation: moveInLeft 1s ease-out;
   
   }
   
@@ -70,6 +71,7 @@
      min-height: 100vh;
      margin-top: -0em;
      font-family: "Poppins",sans-serif;
+   
       
   }
    
@@ -79,6 +81,8 @@
     left: -7em;
     width: 100%;
     padding: 40px;
+    animation: moveInBottom 1s ease-out;
+    
   } 
   
   .heading video{
@@ -97,4 +101,37 @@
     top: 1em ;
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
+    animation: moveInBottom 1s ease-out;
   }
+  @keyframes moveInLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+
+    }
+    80%{
+        transform: translateX(-10px);
+
+    }
+    100%{
+      opacity: 1;
+      transform: translate(0);
+    }
+}
+ 
+@keyframes moveInBottom{
+   0%{
+       opacity: 0;
+       transform: translateY(100px);
+
+   }
+   80%{
+       transform: translateY(-10px);
+
+   }
+   100%{
+     opacity: 1;
+     transform: translate(0);
+   }
+}
+ 
