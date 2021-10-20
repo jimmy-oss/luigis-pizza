@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Poppins',sans-serif;
+  scroll-behavior: smooth;
 }
 
 
@@ -71,6 +72,7 @@
      min-height: 100vh;
      margin-top: -0em;
      font-family: "Poppins",sans-serif;
+     text-shadow: 2px 2px black ;
    
       
   }
@@ -81,6 +83,7 @@
     left: -7em;
     width: 100%;
     padding: 40px;
+    text-shadow:1px 1px black;
     animation: moveInBottom 1s ease-out;
     
   } 
@@ -94,6 +97,20 @@
     object-fit: cover;
     opacity: 0.8;
   }
+  @media(max-width:798px){
+    .heading,.text {
+      padding: 40px;
+        font-size: 3em;
+    }
+   .text h2{
+    padding: 10px;
+    font-size: 3em;
+   }
+     
+    .text {
+        font-size: 2em;
+    }
+}
   .text{
     position: relative;
     z-index: 4;
