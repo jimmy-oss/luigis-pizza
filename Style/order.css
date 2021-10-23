@@ -21,31 +21,6 @@ body{
     margin-left: 10px;
     font-size: 25px;
 }
-.navbar{
-    overflow: hidden;
-    background: cornsilk;
-}
-.navbar-container{
-    background-color:var(--primaryColour);
-    overflow: hidden;
-}
-.topnav{
-    margin-left: 300px;
-    background-color: var(--primaryColour);
-}
-.topnav a{
-    color: black;
-    float: left;
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 12px;
-}
-.topnav a:hover{
-    background-color: var(--mainWhite);
-    color: black;
-}
 .title{
     font-size: 45px;
     text-align: center;
@@ -88,6 +63,7 @@ body{
     width: 27%;
     height: 380px;
     margin: 40px;
+    box-shadow: 0 0 10px;
 }
 .product_image{
     width: 200px;
@@ -211,6 +187,7 @@ padding-left: 35px;
  text-align: center;
  font-size: 1.2em;
  margin-right: 25px;
+ 
 }
 .cart-row:last-child{
     border-bottom: 1px solid #333;
