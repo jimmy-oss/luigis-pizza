@@ -34,6 +34,17 @@ function ready(){
   .getElementsByClassName("btn-purchase")[0]
   .addEventListener('click', purchaseClicked);
 }
+
+function purchaseClicked(){
+    alert("Thank you for your purchase");
+    var cartItems = document.getElementsByClassName("cart-items")[0];
+    while (cartItems.hasChildNodes()){
+        cartItems.removeChild(cartItems.firstChild);
+    }
+    updateCartTotal();
+    updateItemsTotal();
+}
+
 // remove items 2
 function removeCartItem(event){
     var buttonClicked = event.target;
@@ -63,15 +74,16 @@ function quantityChanged(event){
    
 }
 function addItemToCart(title,price,ImageSrc){
-      var cartRow = document.createElement("div");
-      cartRow.classList.add("cart-row");
-      var cartItems = document.getElementsByClassName("cart-items")[0];
-      var CartItemsTitles = cartItems.getElementsByClassName("cart-total-title");
-       for(var  i = 0; i <CartItemsTitles.length; i ++)  {
-        if (CartItemsTitles[i].innerText ==title){
+      var cartRow = document.createElement('div');
+      cartRow.classList.add('cart-row');
+      var cartItems = document.getElementsByClassName('cart-items')[0];
+      var cartItemsTitles = cartItems.getElementsByClassName('cart-item-title');
+       for(var  i = 0; i <cartItemsTitles.length; i ++)  {
+        if (cartItemsTitles[i].innerText == title){
             alert("This Pizza is already added to the cart");
             return;
         }
+        
     }
     var cartRowContents = `
    <div class = "cart-item cart-column">
