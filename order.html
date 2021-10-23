@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Style/order.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <script src="./js/cart.js" async></script>
+    <title>White bouquet</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <strong>
+                <div class="logo">
+                    whitebouquet.com
+                </div>
+            </strong>
+        </div>
+        <div class="navbar-container">
+
+            <div class="topnav">
+                <a href="#">Home</a>
+                <a href="#" >Contact</a>
+                <a href="#" >About</a>
+            </div>
+            <!--Cart icon-->
+            <div class="cart-info" id="cart-info">
+                <span class="cart-info-icon">
+                    <i  class="fas fa-shopping-cart"></i>
+                </span>
+                <p>
+                      <span id="item-count">0</span> items
+                </p>
+            </div>
+              <!--end -->
+              <!--cart-->
+              <section>
+                  <div class="cart" id="cart">
+                      <h1 class="section-header">Cart</h1>
+                      <div class="cart-row">
+                          <span class="cart-item cart-header cart-column">ITEM</span>
+                          <span class="cart-price cart-header cart-column">PRICE</span>
+                          <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+                      </div>
+                    <div class="cart-items">
+                    </div>
+                    <div class="cart-total">
+                        <strong class="cart-total-title">
+                            TOTAL
+                        </strong>
+                        <span class="cart-total-price">$0</span>
+                    </div>
+                    <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+                  </div>
+              </section>
+        </div>
+    </header>
+    <div class="main-container">
+        <p class="title">Flower bouquets</p>
+    </div>
+    <div id="filterButtons">
+        <button class="btn active" onclick="filterSelection('all')">All</button>
+        <button class="btn" onclick="filterSelection('Roses')">Roses </button>
+        <button class="btn" onclick="filterSelection('Tulips')">Tulips</button>
+        <button class="btn" onclick="filterSelection('Orchids')">Orchids</button>
+    </div>
+    <section class="container">
+        <div class="products">
+            <div class="product Roses">
+                <img src="./images/small pizza.jpeg" class="product_image">
+                <h5 class="product-title">DREAM SPRING</h5>
+                Arrangement of mixed  small pizzas
+                <div class="shop-items-details">
+                    <h3 class="product__price">Ksh3800</h3>
+                    <button class="btn btn-primary ADD-TO-CART">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product Tulips">
+                <img src="./images/medium pizza.jpeg" class="product_image">
+                <h5 class="product-title">BEAUTIFUL  SUNSET</h5>
+                Arrangement of mixed medium pizzas
+                <div class="shop-items-details">
+                    <h3 class="product__price">Ksh4800</h3>
+                    <button class="btn btn-primary ADD-TO-CART">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product Orchids">
+                <img src="./images/large pizza.jpeg" class="product_image">
+                <h5 class="product-title">LOVELY  PIZZA</h5>
+                Arrangement of mixed large pizzas
+                <div class="shop-items-details">
+                    <h3 class="product__price">Ksh5300</h3>
+                    <button class="btn btn-primary ADD-TO-CART">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    </section>
+</body>
+</html>
