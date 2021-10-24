@@ -97,7 +97,7 @@
     object-fit: cover;
     opacity: 0.8;
   }
-  @media(max-width:798px){
+  @media(max-width:700px){
     .heading,.text {
       padding: 40px;
         font-size: 3em;

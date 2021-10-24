@@ -198,3 +198,19 @@
      transform: translate(0);
    }
 }
+@media(max-width:798px){
+  .our-path,.constistency,.customer-service{
+      padding: 110px;
+  }
+  .our-path,.constistency,.customer-service p{
+    font-size: 38px;
+    text-align: center;
+    justify-content: center;
+  }
+  .our-path,.constistency,.customer-service h1{
+      font-size: 3em;
+  }
+  .our-path,.constistency,.customer-service h3{
+      font-size: 2em;
+  }
+}

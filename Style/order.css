@@ -2,6 +2,7 @@
      box-sizing: border-box;
      margin: 0;
      padding: 0;
+     scroll-behavior: smooth;
  }
 :root{
     --primaryColour: rgb(240,240,197);
@@ -28,6 +29,7 @@ body{
    float: right;
    margin-top: 2.5em;
    box-shadow: 0 0 10px;
+   animation: moveInRight 1s ease-out;
    
    }
    
@@ -64,6 +66,7 @@ body{
     margin-right: 40px;
     margin-left: 10px;
     font-size: 25px;
+    animation: moveInLeft 1s ease-out;
 }
 .title{
     font-size: 45px;
@@ -73,7 +76,9 @@ body{
     padding: 20px;
     margin-left: 2em;
     font-family: fantasy;
+    animation: moveInRight 1s ease-out;
 }
+
 #filterButtons{
     margin-top: 0px;
     width: 100%;
@@ -82,6 +87,8 @@ body{
     background-color: white;
     text-align: center;
     justify-content: center;
+    animation: moveInLeft 1s ease-out;
+    
 }
 .btn{
     border: none;
@@ -110,7 +117,9 @@ body{
     height: 380px;
     margin: 40px;
     box-shadow: 0 0 10px;
+    animation: moveInBottom 1s ease-out;
 }
+
 .product_image{
     width: 200px;
     height: 200px;
@@ -243,4 +252,50 @@ padding-left: 35px;
 }
 .cart-item-title{
     padding: 5px;
+}
+@keyframes moveInLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+
+    }
+    80%{
+        transform: translateX(-10px);
+
+    }
+    100%{
+      opacity: 1;
+      transform: translate(0);
+    }
+}
+ 
+@keyframes moveInBottom{
+   0%{
+       opacity: 0;
+       transform: translateY(100px);
+
+   }
+   80%{
+       transform: translateY(-10px);
+
+   }
+   100%{
+     opacity: 1;
+     transform: translate(0);
+   }
+}
+@keyframes moveInRight{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+
+    }
+    80%{
+        transform: translateX(10px);
+
+    }
+    100%{
+      opacity: 1;
+      transform: translate(0);
+    }
 }
