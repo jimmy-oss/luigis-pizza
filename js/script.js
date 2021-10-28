@@ -1,4 +1,5 @@
-  const menuToggle = document.querySelector('.toggle')
+// Menu icon toggle bg
+const menuToggle = document.querySelector('.toggle')
   const showcase = document.querySelector('.showcase')
 
   menuToggle.addEventListener('click',() => {
