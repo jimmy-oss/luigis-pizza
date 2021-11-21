@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Style/style.css">
-    <link rel="shortcut icon" href="./images/pizza.jpeg" type="image/x-icon" style="width: 500px;">
-    <title>Luigi's Pizza Garden</title>
+     <link rel="shortcut icon" href="./images/fat man.png" type="image/x-icon">
+    <title>Luigi's Pizza Garden </title>
 </head>
     <!--Start of Tawk.to Script-->
 <script type="text/javascript">
@@ -22,6 +22,8 @@
     </script>
     <!--End of Tawk.to Script-->
 <body>
+    <!--Home background section-->
+
      <section class="showcase">
          <header>
              <h2 class="logo"><a href="#"><img src="./images/logo.png" width="150px" style="border-radius: 2rem; margin: -2em; margin-left: 1rem;"></a></h2>
@@ -34,7 +36,7 @@
               <h3>To Luigi's Pizza Garden</h3>
               <p>As the leading pizza brand in Kenya, Luigi's pizza inn continues to deliver the best tasting pizza using only the freshest ingredients.
                 Our slogan, “It must be the Pizza!” captures the reason why friends, colleagues and families come to enjoy our Famous pizzas.</p>
-              <a href="#" style="border-radius: 2em; margin-left: 4em;">Explore</a>
+              <a href="#" class="btn-animated">Explore</a>
           </div>
           <ul class="social">
               <li><a href="#"><img src="./images/facebook.png" alt=""></a></li>
@@ -44,21 +46,13 @@
      </section>
      <div class="menu">
          <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">News</a></li>
-              <li><a href="#">Destination</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./code.html">News</a></li>
+              <li><a href="./about-us.html">About</a></li>
+              <li><a href="./order.html">Order</a></li>
+              <li><a href="./contact.html">Contact</a></li>
          </ul>
      </div>
-     <script>
-         const menuToggle = document.querySelector('.toggle')
-         const showcase = document.querySelector('.showcase')
-
-        menuToggle.addEventListener('click',() => {
-        menuToggle.classList.toggle('active')
-        showcase.classList.toggle('active')
-  })
-     </script>
+     <script src="./js/script.js"></script>
 </body>
 </html>

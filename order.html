@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./Style/order.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <script src="./js/cart.js" async></script>
+  <title>Luigi's Order</title>
+</head>
+ <!--Start of Tawk.to Script-->
+ <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/5ee663299e5f694422908a06/1fhj2uhoa';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+<body>
+    <header>
+        <div class="navbar">
+            <strong>
+                <div class="logo">
+                    <img src="./images/logo.png" style="max-height: 150px; max-width: 150px;">
+                </div>
+            </strong>
+        </div>
+            <!--Cart icon-->
+            <div class="cart-info" id="cart-info">
+                <span class="cart-info-icon">
+                    <i  class="fas fa-shopping-cart"></i>
+                </span>
+                <p>
+                      <span id="item-count">0</span> items
+                </p>
+            </div>
+              <!--end -->
+              <!--cart-->
+              <section>
+                  <div class="cart" id="cart">
+                      <h1 class="section-header">Cart</h1>
+                      <div class="cart-row">
+                          <span class="cart-item cart-header cart-column">ITEM</span>
+                          <span class="cart-price cart-header cart-column">PRICE</span>
+                          <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+                      </div>
+                    <div class="cart-items">
+                    </div>
+                    <div class="cart-total">
+                        <strong class="cart-total-title">
+                            TOTAL
+                        </strong>
+                        <span class="cart-total-price">$0</span>
+                    </div>
+                    <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+                  </div>
+              </section>
+        </div>
+        <button class="button"  style="vertical-align:right;" ><a href="./index.html"><span style="color:black; opacity: 8em; font-weight: 500; ">Back</span></a>
+        </button>
+    </header>
+    <div class="main-container">
+        <p class="title">Luigi's Pizza Order</p>
+    </div>
+    <h2>LUIGI'S PIZZA BAR IS OPEN FOR IN-PERSON DINING AND TAKEOUT.</h2>
+    <div class="order">
+  <img src="./images/order.png">
+    <h3>CALL (+254) 667-2929 TO ORDER BY PHONE.</h3>
+    </div>
+    <section class="container">
+        <div class="products">
+            <div class="product folders">
+                <img src="./images/small pizza.jpeg" class="product_image">
+                <h5 class="product-title">  SMALL PIZZA😋 </h5>
+                <br>
+                <p style="text-align: center; font-weight:bold;">Choose your favourite crust</p>
+                <input class="radio-input" type="radio" name="test" value="yes" />
+                           <label class="radio-label">Crispy</label>
+                           <input class="radio-input" type="radio" name="test" value="yes" />
+                            <label class="radio-label"> Stuffed</label>
+                            <input class="radio-input" type="radio" name="test" value="yes" />
+                                <label class="radio-label"> Gluten-free</label>
+                <div class="shop-items-details">
+                    <p style="text-align: center; font-weight:bold; font-family: fantasy; color:red;">Choose your favourite toppings</p>
+                    <input class="checkbox" type="checkbox" name="test1" value="yes" />
+                               <label class="checkbox">Onions</label>
+                            <input class="checkbox" type="checkbox" name="test2" value="yes" />
+                                <label class="checkbox"> Chicken.</label>
+                               <input class="checkbox" type="checkbox" name="test3" value="yes" />
+                                    <label class="checkbox"> Mushrooms</label>
+                    <h3 class="product__price">Ksh300</h3>
+                    <button class="btn btn-primary ADD-TO-CART">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product files">
+                <img src="./images/medium pizza.jpeg" class="product_image">
+                <h5 class="product-title">MEDIUM PIZZA😋 </h5>
+                <br>
+                <p style="text-align: center; font-weight:bold;">Choose your favourite crust</p>
+                <input class="radio-input" type="radio" name="test" value="yes" />
+                           <label class="radio-label">Crispy</label>
+                        <input class="radio-input" type="radio" name="test" value="yes" />
+                            <label class="radio-label"> Stuffed</label>
+                           <input class="radio-input" type="radio" name="test" value="yes" />
+                                <label class="radio-label"> Gluten-free</label>
+                <div class="shop-items-details">
+                    <p style="text-align: center; font-weight:bold; font-family: fantasy; color:red;">Choose your favourite toppings</p>
+                    <input class="checkbox" type="checkbox" name="test1" value="yes" />
+                               <label class="checkbox">Pepperoni</label>
+                            <input class="checkbox" type="checkbox" name="test2" value="yes" />
+                                <label class="checkbox">Sausage</label>
+                               <input class="checkbox" type="checkbox" name="test3" value="yes" />
+                                    <label class="checkbox">Tomato</label>
+                    <h3 class="product__price">Ksh800</h3>
+                    <button class="btn btn-primary ADD-TO-CART">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product images">
+                <img src="./images/large pizza.jpeg" class="product_image">
+                <h5 class="product-title">LARGE  PIZZA😋 </h5>
+                <p style="text-align: center; font-weight:bold;">Choose your favourite crust</p>
+                <input class="radio-input" type="radio" name="test" value="yes" />
+                           <label class="radio-input">Crispy</label>
+                        <input class="radio-input" type="radio" name="test" value="yes" />
+                            <label class="radio-input"> Stuffed</label>
+                           <input class="radio-input" type="radio" name="test" value="yes" />
+                                <label class="radio-input"> Gluten-free</label>
+                <div class="shop-items-details">
+                    <p style="text-align: center; font-weight:bold; font-family: fantasy; color:red;">Choose your favourite toppings</p>
+                    <input class="checkbox" type="checkbox" name="test1" value="yes" />
+                               <label class="checkbox">Peppers</label>
+                            <input class="checkbox" type="checkbox" name="test2" value="yes" />
+                                <label class="checkbox">Extra Cheese</label>
+                               <input class="checkbox" type="checkbox" name="test3" value="yes" />
+                                    <label class="checkbox">Spicy Pork</label>
+                    <h3 class="product__price" >Ksh1000</h3>
+                    <button class="btn btn-primary ADD-TO-CART" style="margin-top: 2em;">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    </section>
+</body>
+</html>

@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins',sans-serif;
+  scroll-behavior: smooth;
+}
+
+
+  .button {
+   position: relative;
+  border-radius: 5em;
+  border: none;
+  mix-blend-mode: color-dodge;
+  color: #FFF;
+  text-align: center;
+  font-size: 20px;
+  right: 2em;
+  width: 10%;
+  padding: 10px;
+  transition: all 0.5s;
+  cursor: pointer;
+  float: right;
+  top: -15em;
+  box-shadow: 0 0 10px;
+  
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  
+ .our-path{
+     position: relative;
+     top: 10em;
+     font-size: 16px;
+   
+ }
+ .our-path h1{
+     margin-left: 7em;
+     animation: moveInBottom 1s ease-out;
+ }
+  
+ .gif-1{
+     position: relative;
+     margin-left: 5em;
+       top: -14em;
+       border-radius: 4%;
+       box-shadow: 0 0 10px;
+       animation: moveInLeft 1s ease-out;
+          
+ }
+ .our-path p{
+     float: right;
+     margin-left: 42em;
+     text-align: center;
+    margin-right: 15em;
+    text-shadow: 0.1px 0px black;
+    animation: moveInRight 1s ease-out;
+ }
+ .constistency{
+    position: relative;
+    text-align: center;
+    top: -5em;
+    margin-left: 26em;
+    animation: moveInRight 1s ease-out;
+   
+ }
+ .constistency p{
+     position: relative;
+     padding: -2em;
+     top: -1em;
+     text-align: left;
+     margin-left: -24em;
+     justify-content: center;
+     text-shadow: 0.1px 0px black;
+     animation: moveInBottom 1s ease-out;
+ }
+ .constistency h1{
+       position: relative;
+       padding-left: 2em;
+       text-align: right;
+       margin: 8em;
+       animation: moveInRight 1s ease-out;
+ }
+ 
+ .quality{
+    position: relative;
+    text-align: center;
+    top: -4em;
+    margin-bottom: auto;
+    text-shadow: 0.1px 0px black;
+    animation: moveInBottom 1s ease-out;
+ }
+ .customer-service{
+    position: relative;
+    text-align: center;
+    top: 5em;
+    margin-left: 3em;
+    animation: moveInRight 1s ease-out;
+ }
+ .customer-service p{
+     position: relative;
+     margin-left: 30em;
+     top: 18em;
+     text-shadow: 0.1px 0px black;
+     animation: moveInBottom 1s ease-out;
+ }
+ .customer-service h1{
+      position: relative;
+      margin-left: 15em;
+      top: 8em;
+      animation: moveInRight 1s ease-out;
+ }
+ .gif{
+     position: relative;
+     margin-right: 48em;
+     top: 2em;
+     box-shadow: 0 0 10px;
+ }
+ @media(max-width:798px){
+    .our-path, .constistency, .customer-service,.quality{
+        padding: 40px;
+    }
+    .p, h2{
+        font-size: 3em;
+    }
+    .p, h3{
+        font-size: 2em;
+    }
+}
+ @keyframes moveInLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+
+    }
+    80%{
+        transform: translateX(-10px);
+
+    }
+    100%{
+      opacity: 1;
+      transform: translate(0);
+    }
+}
+@keyframes moveInRight{
+   0%{
+       opacity: 0;
+       transform: translateX(-100px);
+
+   }
+   80%{
+       transform: translateX(10px);
+
+   }
+   100%{
+     opacity: 1;
+     transform: translate(0);
+   }
+}
+@keyframes moveInBottom{
+   0%{
+       opacity: 0;
+       transform: translateY(100px);
+
+   }
+   80%{
+       transform: translateY(-10px);
+
+   }
+   100%{
+     opacity: 1;
+     transform: translate(0);
+   }
+}
+@media(max-width:798px){
+  .our-path,.constistency,.customer-service{
+      padding: 110px;
+  }
+  .our-path,.constistency,.customer-service p{
+    font-size: 38px;
+    text-align: center;
+    justify-content: center;
+  }
+  .our-path,.constistency,.customer-service h1{
+      font-size: 3em;
+  }
+  .our-path,.constistency,.customer-service h3{
+      font-size: 2em;
+  }
+}

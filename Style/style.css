@@ -10,6 +10,7 @@
     margin: 0;
     padding: 0;
     font-family:'Poppins',sans-serif;
+    scroll-behavior: smooth;
 }
 .showcase{
      position: absolute;
@@ -42,6 +43,9 @@
 .logo{
     text-transform: uppercase;
     cursor: pointer;
+    animation: moveInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
 }
 
 .toggle{
@@ -84,27 +88,36 @@
 .text{
     position: relative;
     z-index: 10;
+    backface-visibility: hidden;
 }
 .text h2{
     font-size: 5em;
     font-weight: 800;
     line-height: 1em;
     text-transform: uppercase;
-    color: red;
+    color: brown;
+    animation: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
 }
 .text h3{
     font-size: 4em;
     font-weight: 700;
     line-height: 1em;
     text-transform: uppercase;
-    color: red;
+    color: brown;
+    animation: moveInRight 1s ease-out;
+     
 }
 .text p{
     font-size: 1.1em;
     margin: 20px 0;
     font-weight: 400;
     max-width: 700px;
-    color: aqua;
+    color: white;
+    text-shadow: 2px 2px black;
+    animation: moveInBottom 1s ease-out;
+     
 }
  .text a{
      display: inline-block;
@@ -116,11 +129,41 @@
      margin-top: 10px;
      text-transform: uppercase;
      letter-spacing: 2px;
-     transition: 0.2s;
+     border-radius: 2em;
+     margin-left: 4em;
+     transition: all .2s;
+     position: relative;
  }
  .text a:hover{
+     transform: translateY(-3px);
      letter-spacing: 6px;
+     box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
  }
+  .text a:active{
+      transform: translateY(-1px);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+  }
+  .text a::after{
+      content: "";
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      border-radius: 2em;
+      background-color: #FFFF;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: all .4s;
+  }
+  .text a:hover::after{
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+  }
+  .btn-animated{
+      animation: moveInButton .5s ease-out .75s;
+      animation-fill-mode: backwards;
+  }
  .social{
      position: absolute;
      bottom: 20px;
@@ -177,3 +220,63 @@
          font-size: 2em;
      }
  }
+ @keyframes moveInLeft{
+     0%{
+         opacity: 0;
+         transform: translateX(100px);
+
+     }
+     80%{
+         transform: translateX(-10px);
+
+     }
+     100%{
+       opacity: 1;
+       transform: translate(0);
+     }
+ }
+ @keyframes moveInRight{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+
+    }
+    80%{
+        transform: translateX(10px);
+
+    }
+    100%{
+      opacity: 1;
+      transform: translate(0);
+    }
+}
+@keyframes moveInBottom{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+
+    }
+    80%{
+        transform: translateY(-10px);
+
+    }
+    100%{
+      opacity: 1;
+      transform: translate(0);
+    }
+}
+@keyframes moveInButton{
+    0%{
+        opacity: 0;
+        transform: translateY(30px);
+
+    }
+     
+    100%{
+      opacity: 1;
+      transform: translate(0);
+    }
+}
+ 
+  
+   
