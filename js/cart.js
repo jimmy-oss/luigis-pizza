@@ -34,7 +34,7 @@ function ready(){
   .getElementsByClassName("btn-purchase")[0]
   .addEventListener('click', purchaseClicked);
 }
- // checkout
+ // delivery functionality
 function myFunction() {
     var delivery;
     if (confirm( "Would you like us deliver your pizza to your doorstep? transport cost ksh 200.")) {
