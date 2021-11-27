@@ -34,6 +34,15 @@ function ready(){
   .getElementsByClassName("btn-purchase")[0]
   .addEventListener('click', purchaseClicked);
 }
+// checkout
+function myFunction() {
+    var person = prompt("Please enter your delivery location",);
+     alert("The delivery fee is ksh 200. Thank you for shopping with us.")
+    if (person != null) {
+      document.getElementById("delivery").innerHTML =
+      "Success!  " + person + " we will be waiting for you to pick your pizza. Thank you for shopping with us.";
+    }
+  }
 
 function purchaseClicked(){
     alert("Thank you for your purchase");
