@@ -46,6 +46,13 @@ function myFunction() {
       if (person != null) {
     document.getElementById("delivery").innerHTML =
      "Success! <span class='txtColor'> " + person  + " </span> we will be waiting for you to pick your pizza. Thank you for shopping with us.";
+         alert("Thank you for your purchase");
+    var cartItems = document.getElementsByClassName("cart-items")[0];
+    while (cartItems.hasChildNodes()){
+        cartItems.removeChild(cartItems.firstChild);
+    }
+    updateCartTotal();
+    updateItemsTotal();
      }
   }
 function purchaseClicked(){
