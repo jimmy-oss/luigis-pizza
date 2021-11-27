@@ -240,6 +240,9 @@ padding-left: 35px;
     font-weight: bold;
     margin-top: 0px;
 }
+.txtColor {
+     color: red;  
+  }
 .btn-danger:hover{
     background-color: white;
     color: #333;
