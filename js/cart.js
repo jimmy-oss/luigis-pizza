@@ -40,7 +40,7 @@ function myFunction() {
     if (confirm( "Would you like us deliver your pizza to your doorstep? transport cost ksh 200.")) {
     }
      else if 
-     (confirm("Thanks shopping with us").hide());{
+     (confirm("Thank you for shopping with us.").hide());{
      }
      var person = prompt("Please enter your delivery location",);
       if (person != null) {
