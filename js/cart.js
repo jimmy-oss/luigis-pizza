@@ -45,7 +45,7 @@ function myFunction() {
      var person = prompt("Please enter your delivery location",);
       if (person != null) {
     document.getElementById("delivery").innerHTML =
-    "Success!  " + person + " we will be waiting for you to pick your pizza. Thank you for shopping with us.";
+      "Success! <span class='txtColor'> " + person  + " </span> we will be waiting for you to pick your pizza. Thank you for shopping with us.";
      }
   }
 function purchaseClicked(){
