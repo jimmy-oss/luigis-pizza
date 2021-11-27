@@ -175,6 +175,7 @@ body{
     width: 0;
     overflow: auto;
     text-align: center;
+    z-index: 1000;
 }
 .show-cart{
     width: 35rem;
