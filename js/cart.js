@@ -34,16 +34,20 @@ function ready(){
   .getElementsByClassName("btn-purchase")[0]
   .addEventListener('click', purchaseClicked);
 }
-// checkout
+ // delivery functionality
 function myFunction() {
-    alert(" Would you like us deliver your pizza to your doorstep? transport cost ksh 200.")
-    var person = prompt("Please enter your delivery location",);
-    if (person != null) {
-      document.getElementById("delivery").innerHTML =
-      "Success!  " + person + " we will be waiting for you to pick your pizza. Thank you for shopping with us.";
+    var delivery;
+    if (confirm( "Would you like us deliver your pizza to your doorstep? transport cost ksh 200.")) {
     }
+     else if 
+     (confirm("Thanks shopping with us").hide());{
+     }
+     var person = prompt("Please enter your delivery location",);
+      if (person != null) {
+    document.getElementById("delivery").innerHTML =
+    "Success!  " + person + " we will be waiting for you to pick your pizza. Thank you for shopping with us.";
+     }
   }
-
 function purchaseClicked(){
     alert("Thank you for your purchase");
     var cartItems = document.getElementsByClassName("cart-items")[0];
