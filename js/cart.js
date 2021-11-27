@@ -36,8 +36,8 @@ function ready(){
 }
 // checkout
 function myFunction() {
+    alert(" Would you like us deliver your pizza to your doorstep? transport cost ksh 200.")
     var person = prompt("Please enter your delivery location",);
-     alert("The delivery fee is ksh 200. Thank you for shopping with us.")
     if (person != null) {
       document.getElementById("delivery").innerHTML =
       "Success!  " + person + " we will be waiting for you to pick your pizza. Thank you for shopping with us.";
