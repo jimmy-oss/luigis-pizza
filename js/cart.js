@@ -39,7 +39,7 @@ function ready(){
     var delivery = (confirm( "Would you like us deliver your pizza to your doorstep? transport cost ksh 200."));
     if 
     (delivery){   
-        (alert( "Thank you for shopping with us."));
+        (alert( "Thank you for shopping with us 😊"));
         var person = prompt("Please enter your delivery location",);
         if (person != null) {
       document.getElementById("delivery").innerHTML =
