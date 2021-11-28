@@ -43,8 +43,8 @@ function ready(){
         var person = prompt("Please enter your delivery location",);
         if (person != null) {
       document.getElementById("delivery").innerHTML =
-    "Success! <span class='txtColor'> " + person  + " </span> we will be waiting for you to pick your pizza. Thank you for shopping with us.";
-    alert("Thank you for your purchase");
+    "Success! <span class='txtColor'> " + person  + " </span> we will be waiting for you to pick your pizza. Thank you for shopping with us 😊";
+     alert("Thank you for shopping with us 😊");
     var cartItems = document.getElementsByClassName("cart-items")[0];
     while (cartItems.hasChildNodes()){
         cartItems.removeChild(cartItems.firstChild);
@@ -54,7 +54,7 @@ function ready(){
        }
     }
     else{
-        (alert(" Thank you for shopping with us."));
+         (alert(" Thank you for shopping with us 😊"));
  }
  var cartItems = document.getElementsByClassName("cart-items")[0];
     while (cartItems.hasChildNodes()){
@@ -70,10 +70,10 @@ function purchaseClicked(){
     var proceed = confirm(" Do you want to purchase a pizza?");
     if 
     (proceed){   
-        (alert( "Thank you for your purchase"));
+           (alert( "Thank you for your purchase 😊"));
     }
      else{
-           (alert(" Thank you for shopping with us."));
+          (alert(" Thank you for shopping with us 😊"));
     }
     var cartItems = document.getElementsByClassName("cart-items")[0];
     while (cartItems.hasChildNodes()){
