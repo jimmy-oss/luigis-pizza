@@ -56,7 +56,14 @@ function myFunction() {
      }
   }
 function purchaseClicked(){
-    alert("Thank you for your purchase");
+    var proceed = confirm(" Do you want to purchase a pizza?");
+    if 
+    (proceed){   
+        (alert( "Thank you for your purchase"));
+    }
+     else{
+           (alert(" Thank you for shopping with us."));
+    }
     var cartItems = document.getElementsByClassName("cart-items")[0];
     while (cartItems.hasChildNodes()){
         cartItems.removeChild(cartItems.firstChild);
