@@ -35,26 +35,37 @@ function ready(){
   .addEventListener('click', purchaseClicked);
 }
  // delivery functionality
-function myFunction() {
-    var delivery;
-    if (confirm( "Would you like us deliver your pizza to your doorstep? transport cost ksh 200.")) {
-    }
-     else if 
-     (confirm("Thank you for shopping with us.").hide());{
-     }
-     var person = prompt("Please enter your delivery location",);
-      if (person != null) {
-    document.getElementById("delivery").innerHTML =
-      "Success! <span class='txtColor'> " + person  + " </span> we will be waiting for you to pick your pizza. Thank you for shopping with us.";
-         alert("Thank you for your purchase");
+ function myFunction() {
+    var delivery = (confirm( "Would you like us deliver your pizza to your doorstep? transport cost ksh 200."));
+    if 
+    (delivery){   
+        (alert( "Thank you for shopping with us."));
+        var person = prompt("Please enter your delivery location",);
+        if (person != null) {
+      document.getElementById("delivery").innerHTML =
+    "Success! <span class='txtColor'> " + person  + " </span> we will be waiting for you to pick your pizza. Thank you for shopping with us.";
+    alert("Thank you for your purchase");
     var cartItems = document.getElementsByClassName("cart-items")[0];
     while (cartItems.hasChildNodes()){
         cartItems.removeChild(cartItems.firstChild);
     }
     updateCartTotal();
     updateItemsTotal();
-     }
-  }
+       }
+    }
+    else{
+        (alert(" Thank you for shopping with us."));
+ }
+ var cartItems = document.getElementsByClassName("cart-items")[0];
+    while (cartItems.hasChildNodes()){
+        cartItems.removeChild(cartItems.firstChild);
+    }
+    updateCartTotal();
+    updateItemsTotal();
+     
+    }
+
+    // Purchasing functionality
 function purchaseClicked(){
     var proceed = confirm(" Do you want to purchase a pizza?");
     if 
