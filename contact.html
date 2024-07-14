@@ -29,27 +29,29 @@
     </button>
     <div class="container">
 <div class="text">Contact us Form</div>
-<form action="https://gmail.us5.list-manage.com/subscribe/post?u=9943298b5e57d17cf8fc829c7&amp;id=8a34c4ee55" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form-contact" target="_blank" novalidate>
+
+<form action="https://api.web3forms.com/submit" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form-contact" target="_blank" novalidate>
+    <input type="hidden" name="access_key" value="b3c42053-c780-4089-ace0-cb2cbfca63a3">
     <div class="form-row">
         <div class="input-data">
-            <input type="text" required>
+           <input type="text" name="name" required>
             <div class="underline"></div>
             <label>First Name</label>
         </div>
         <div class="input-data ">
-            <input type="text" required>
+          <input type="last-name" name="last-name" required>
             <div class="underline"></div>
             <label>Last Name</label>
         </div>
     </div>
     <div class="form-row">
         <div class="input-data">
-            <input type="text" required>
+           <input type="email"name="email" required>
             <div class="underline"></div>
             <label>Email Address</label>
         </div>
         <div class="input-data ">
-            <input type="text" required>
+           <input type="website"name="website" required>
             <div class="underline"></div>
             <label>Website Name</label>
         </div>
@@ -57,14 +59,14 @@
     <div class="form-row">
     <div class="input-data textarea">
         <div class="underline"></div>
-         <textarea  cols="30" rows="10" required></textarea>
+    <textarea name="message" cols="30" rows="10" required></textarea>
         <label>Write Your Message</label>
     </div>
     </div>
     <div class="form-row submit-btn">
         <div class="input-data ">
             <div class="inner"></div>
-            <input type="submit" value="submit"  name="subscribe" id="mc-embedded-subscribe">
+            <input type="submit" id="mc-embedded-subscribe">
         </div>
         </div>
     </form>  
